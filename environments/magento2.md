@@ -112,7 +112,10 @@ In addition to the below manual process, there is a [Github Template available f
 8. Install the application and you should be all set:
 
     :::{note}
-    Please note that if using Valkey instead of Redis, the value of the session and cache flags will be different
+    Please note that if using Adobe Commerce `2.4.9` or later, _and Valkey instead of Redis_, the value of the session and cache flags will be different.
+    The flags, _but not their values_, remain the same for backwards compatibility in version `2.4.8` and earlier, while using Valkey instead of Redis.
+
+    See [here](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-session) for more information, including the proper flags to use for Valkey.
     :::
 
         ## Install Application
